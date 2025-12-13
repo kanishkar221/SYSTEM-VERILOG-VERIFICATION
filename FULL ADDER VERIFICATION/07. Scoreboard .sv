@@ -12,9 +12,9 @@ class scoreboard;
       monit_to_score.get(trans);
       trans.display("SCOREBOARD");
       if((trans.a^trans.b^trans.c_in==trans.sum)&&((trans.a&trans.b)|(trans.b&trans.c_in)|(trans.c_in&trans.a)==trans.c_out))
-        $display("PASS");
+        $display("=================PASS=================");
       else
-        $display("FAIL");
+        $display("=================FAIL=================");
     end
   endtask
 endclass
