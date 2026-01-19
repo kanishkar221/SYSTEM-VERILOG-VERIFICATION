@@ -1,6 +1,8 @@
-module d_flipflop(
+module d_flipflop
+  (
   input clk, rst, d,
-  output reg q);
+  output reg q
+  );
   
   always @(posedge clk) begin
     if(rst)
